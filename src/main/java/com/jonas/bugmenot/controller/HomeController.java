@@ -8,6 +8,6 @@ public class HomeController {
 
     @GetMapping
     public String showHome() {
-        return "home.html";
+        return "home";
     }
 }

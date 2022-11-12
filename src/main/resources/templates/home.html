@@ -9,9 +9,12 @@
     <th:block th:replace="fragments/scripts :: scripts" th:remove="tag"></th:block>
 </head>
 <body>
+<div th:replace="fragments/header :: header"></div>
 <div class="container-fluid p-5 text-center">
     <h1>Homepage</h1>
     <p>Thymeleaf and Bootstrap 5</p>
+
+    <button type="button" class="btn btn-primary">Primary</button>
 
     <table class="table">
         <thead>
@@ -43,6 +46,7 @@
         </tbody>
     </table>
 
-</div><div th:replace="fragments/footer :: footer"></div>
+</div>
+<div th:replace="fragments/footer :: footer"></div>
 </body>
 </html>

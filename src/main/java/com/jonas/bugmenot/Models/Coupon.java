@@ -16,7 +16,7 @@ import java.util.Objects;
 @Setter
 @ToString
 @RequiredArgsConstructor
-public class CouponModel {
+public class Coupon {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -36,7 +36,7 @@ public class CouponModel {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
-        CouponModel that = (CouponModel) o;
+        Coupon that = (Coupon) o;
         return id != 0 && Objects.equals(id, that.id);
     }
 

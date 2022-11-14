@@ -7,6 +7,7 @@ import lombok.ToString;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.Objects;
 
 @Entity
@@ -20,16 +21,15 @@ public class CouponModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     long id;
-
 //    TODO change some to enum later on
     String shop;
-//    String benefit;
-//    String dealProperty;
-//    Date validUntil;
-//    Boolean conditionNoMinimumOrderValue;
-//    Boolean conditionNewAndExistingCustomers;
-//    Integer countEncashments = 0;
-//    URL url;
+    String benefit;
+    String dealProperty;
+    Date validUntil;
+    Boolean conditionNoMinimumOrderValue;
+    Boolean conditionNewAndExistingCustomers;
+    Integer countEncashments = 0;
+    String url;
 
 
     @Override
